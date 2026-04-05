@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANDR App — Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #374151;
+            --heading-color: #111827;
+            --link-color: #2563eb;
+            --border-color: #e5e7eb;
+            --muted-color: #6b7280;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #111827;
+                --text-color: #d1d5db;
+                --heading-color: #f9fafb;
+                --link-color: #60a5fa;
+                --border-color: #374151;
+                --muted-color: #9ca3af;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--heading-color);
+            font-weight: 600;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-top: 0;
+            margin-bottom: 0.2em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.25rem; }
+
+        p { margin-bottom: 1.2em; }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: text-decoration 0.2s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            margin: 3rem 0;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.2em;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        strong {
+            color: var(--heading-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>WANDR App — Privacy Policy</h1>
+    <p class="last-updated"><strong>Last Updated:</strong> April 1, 2026</p>
+
+    <h2>Introduction</h2>
+    <p>WANDR ("we", "us", or "our") operates the WANDR mobile application (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.</p>
+
+    <hr>
+
+    <h2>Information We Collect</h2>
+
+    <h3>Information You Provide</h3>
+    <ul>
+        <li><strong>Account Information:</strong> Email address, display name, phone number, profile photo.</li>
+        <li><strong>Profile Details:</strong> Blood group, emergency contact information (stored securely in encrypted local storage and private Firestore subcollections).</li>
+        <li><strong>Trip/Plan Data:</strong> Routes, waypoints, start/end points, trip plans created within the app.</li>
+        <li><strong>Group Data:</strong> Group names, member lists, group photos, join codes.</li>
+        <li><strong>Messages:</strong> Text messages, photos, and audio messages shared in group and trip chats.</li>
+    </ul>
+
+    <h3>Information Collected Automatically</h3>
+    <ul>
+        <li><strong>Location Data:</strong> GPS coordinates for route tracking, live location sharing with group members during trips, and turn-by-turn navigation. Location is collected in the foreground and, with your explicit consent, in the background during active trips.</li>
+        <li><strong>Device Information:</strong> Device type, operating system version, unique device identifiers.</li>
+        <li><strong>Crash Reports (Firebase Crashlytics):</strong> We use Firebase Crashlytics to collect anonymized crash reports, error logs, device information, and diagnostic data. User identifiers may be associated with crash reports for debugging purposes. This data is shared with Google and retained per Google's data retention policies.</li>
+        <li><strong>Analytics:</strong> Anonymized usage patterns to improve the app experience.</li>
+        <li><strong>Push Notification Tokens:</strong> Firebase Cloud Messaging tokens for delivering notifications about trips and group activity.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Background Location</h2>
+    <p>When you start a trip, WANDR accesses your location in the background to:</p>
+    <ul>
+        <li>Track your trip progress in real-time</li>
+        <li>Share your live location with group members during trips</li>
+        <li>Provide turn-by-turn navigation even when the app is in the background</li>
+    </ul>
+    <p>You can disable background location access at any time in your device settings. Without background location, navigation and live tracking features will be limited when the app is not in the foreground.</p>
+
+    <hr>
+
+    <h2>Audio Recording</h2>
+    <p>WANDR allows you to send audio messages in group and trip chats. Audio is recorded only when you explicitly press and hold the record button. Audio files are stored in Firebase Storage and shared with group members.</p>
+
+    <hr>
+
+    <h2>How We Use Your Information</h2>
+    <ul>
+        <li>To provide and maintain the Service.</li>
+        <li>To enable real-time location sharing with your group members during trips.</li>
+        <li>To provide turn-by-turn navigation guidance.</li>
+        <li>To send you important notifications about trips and group activities.</li>
+        <li>To improve and personalize your experience.</li>
+        <li>To monitor and analyze usage for improvements.</li>
+        <li>To detect and prevent fraud, abuse, and policy violations.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Data Sharing</h2>
+    <p>We do <strong>not</strong> sell your personal data.</p>
+    <p>We may share data with:</p>
+    <ul>
+        <li><strong>Other Users:</strong> Your display name, profile photo, and real-time location are shared with group members (as enabled by you during trips).</li>
+        <li><strong>Service Providers:</strong> Firebase (Google) for authentication, database, storage, crash reporting, and push notifications. Google Maps for navigation and route computation.</li>
+        <li><strong>Legal Requirements:</strong> If required by law, regulation, or legal process.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Data Retention</h2>
+    <ul>
+        <li>Trip location data, messages, and account information are retained indefinitely until you delete the trip or your account.</li>
+        <li>You can delete your account at any time through the app's Profile screen, which permanently removes all associated data.</li>
+        <li>Residual data in automated backups may take up to 30 days to be fully purged after account deletion.</li>
+        <li>Anonymized crash reports and analytics data may be retained per Google's data retention policies.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Account Deletion</h2>
+    <p>You can delete your account and all associated data at any time:</p>
+    <ol>
+        <li><strong>In-App:</strong> Open the WANDR app &rarr; Profile tab &rarr; scroll to "Delete Account" &rarr; confirm your identity.</li>
+        <li><strong>Web:</strong> Visit our <a href="https://wandr-app.github.io/wandr/legal/delete-account">account deletion page</a> for instructions or to request manual deletion.</li>
+    </ol>
+    <p>When you delete your account, the following data is permanently removed:</p>
+    <ul>
+        <li>Your profile information, phone number, blood group, and emergency contacts</li>
+        <li>Your group memberships (you are removed from all groups)</li>
+        <li>Plans you created</li>
+        <li>Profile pictures and uploaded media</li>
+        <li>Push notification tokens</li>
+        <li>Trip location data and messages</li>
+    </ul>
+
+    <hr>
+
+    <h2>Content Moderation</h2>
+    <p>We provide tools to report inappropriate content and block users. Reports are reviewed and actioned per our Terms of Service. We reserve the right to remove content and suspend accounts that violate our policies.</p>
+
+    <hr>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+        <li>Access your personal data (via the "Export Data" feature in your Profile).</li>
+        <li>Request correction of inaccurate data.</li>
+        <li>Request deletion of your data (via account deletion).</li>
+        <li>Withdraw consent for location tracking at any time via device settings.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Security</h2>
+    <p>We implement industry-standard measures to protect your data:</p>
+    <ul>
+        <li>All data in transit is encrypted via TLS/HTTPS.</li>
+        <li>Sensitive personal information (phone number, blood group, emergency contacts) is stored in private Firestore subcollections accessible only to the account owner.</li>
+        <li>PII is additionally encrypted in local secure storage (expo-secure-store).</li>
+        <li>Firebase Security Rules enforce per-user data access controls.</li>
+        <li>Firebase App Check protects backend APIs from abuse.</li>
+    </ul>
+    <p>However, no method of electronic transmission or storage is 100% secure.</p>
+
+    <hr>
+
+    <h2>Children's Privacy</h2>
+    <p>Our Service is not directed to individuals under 13. We do not knowingly collect personal data from children under 13. If we become aware that we have collected data from a child under 13, we will take steps to delete it.</p>
+
+    <hr>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or via email. Your continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+
+    <hr>
+
+    <h2>Contact Us</h2>
+    <p>For questions about this Privacy Policy or to exercise your data rights, contact us at:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:darsshandev007@gmail.com">darsshandev007@gmail.com</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Jurisdiction</h2>
+    <p>This Privacy Policy is governed by the laws of Tamil Nadu, India.</p>
+
+</body>
+</html>
